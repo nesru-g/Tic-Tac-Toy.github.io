@@ -1,0 +1,270 @@
+body {
+    background-color: rgba(255, 255, 255, 0.98);
+    text-align: center;
+    margin: 2vh 4vw;
+    color: rgb(29, 29, 34);
+    margin-bottom: 2.5rem;
+}
+
+/*Heading Section*/
+
+.heading-section {
+    background-color: rgba(0, 0, 255, 0.632);
+    padding: 1rem 0;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    margin-bottom: 2.5rem;
+}
+
+.heading-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    margin-bottom: 0.8rem;
+
+}
+
+.heading-section p {
+    font-size: 1.25rem;
+    color: rgb(187, 189, 176);
+    margin: 0;
+}
+
+
+
+/*Short Form*/
+.short-form {
+    display: none;
+    margin: 0;
+    position: absolute;
+    top: 40vh;
+    left: 5vw;
+    width: 15rem;
+}
+
+.short-form ol {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+
+}
+
+.short-form .v1,
+.short-form .v2 {
+    font-size: 2.35rem;
+    color: rgb(4, 4, 52);
+    text-shadow: 1px 1px 2px white;
+    margin: 0;
+    font-weight: 500;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    display: inline;
+}
+
+.short-form .v11,
+.short-form .v22 {
+    font-size: 2.35rem;
+    color: rgb(4, 4, 52);
+    text-shadow: 1px 1px 2px white;
+    margin: 0;
+    font-weight: 400;
+    display: inline;
+} 
+
+.short-form .vs {
+    font-size: 3rem;
+    color: red;
+    font-weight: 400;
+    text-shadow: 1px 0 1px red;
+}
+
+/*Edit Section*/
+
+.edit-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    margin-top: 1rem;   
+    gap: 1rem;
+
+}
+
+.player-config {
+    width: 90%;
+    margin: 0 auto;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 0.8rem 0;
+    box-shadow: 1px 1px 4px blue;
+}
+
+.edit-section h3 {
+    margin: 5px 0 0.5rem 0;
+    color: inherit;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.edit-section h2 {
+    margin: 4px 0 0.5rem 0;
+    color: inherit;
+    font-size: 1.65rem;
+    font-family: 'Inc free',sans-serif;
+}
+
+.edit-section span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: inherit;
+}
+
+.edit-section button {
+    color: inherit;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 3px black;
+    border-radius: 4px;
+    transition: 0.5s ease-out;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+.edit-section button:hover {
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+/*Back-Drop Section*/
+
+.backdrop-overlay {
+    background-color: rgba(0, 0, 0, 0.605);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+}
+
+.backdrop-section {
+    position: fixed;
+    top: 1rem;
+    left: 34vw;
+    display: none;
+    width: auto;
+}
+
+
+.backdrop-section form {
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(175deg,rgba(27, 27, 255, 0.622),
+    rgb(79, 108, 255),rgba(82, 106, 225, 0.661));
+    top: 18vh;
+    position: relative;
+    padding: 0.45rem 1rem;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 1px 2px 3px whitesmoke;
+}
+
+
+.backdrop-section .player-choice {
+    font-size: 2rem;
+    color: inherit;
+    font-weight: 600;
+    text-align: start;
+    padding-left: 0.5rem;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+
+.backdrop-section form .input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: start;
+    margin: 0.5rem 0 2rem 1rem;
+}
+
+
+.backdrop-section form .input-form label {
+    font-size: 1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: azure;
+}
+
+.backdrop-section form .input-form input {
+    font-size: 1.35rem;
+    font-weight: 550;
+    padding: 0.5rem 1rem;
+    width: 70%;
+}
+
+.backdrop-section form .buttons {
+    padding: 0.45rem 2rem;
+    text-align: end;
+}
+
+.backdrop-section form .buttons button {
+    padding: 0.45rem 1.25rem;
+    margin-top: 1rem;
+    border-radius: 3px;
+    font-size: 1.45rem;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.backdrop-section form .buttons .cancel {
+    background-color: transparent;
+    color:white;
+    font-weight: 550;
+    box-shadow: -1px -1px 3px white;
+    margin-right: 0.8rem;
+    transition: 0.45s ease-out;
+}
+
+
+.backdrop-section form .buttons .cancel:hover {
+    background-color: rgba(0, 72, 255, 1);
+    transform: scale(1.05);
+}
+
+.backdrop-section form .buttons .confirm {
+    background-color: transparent;
+    font-weight: 550;
+    color: white;
+    box-shadow: 1px 1px 3px white;
+    transition: 0.45s ease-out;
+}
+
+.backdrop-section form .buttons .confirm:hover {
+    background-color: rgba(0, 72, 255, 1);
+    transform: scale(1.05);
+}
+
+.backdrop-section form .error input{
+    color: rgb(130,25,25);
+    border-color: rgb(130,25,25);
+    background-color: rgb(250, 155, 92);
+}
+
+
+.backdrop-section form .error label{
+    color: rgb(130,25,25);
+}
+
+
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toy</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="other-section.css">
+    <script src="main-logic.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <section class="heading-section">
+        <h1>Tic Tac Toy</h1>
+        <p>This game is build using classical HTML, CSS and 
+            JavaScript courses that is taken with in 3 weeks(-).</p>
+    </section>
+
+
+    <section class="edit-section">
+        <div class="player-config" id="p-1">
+            <h3>Player 1</h3>
+           <h2>Player Name</h2>
+           <span>X</span>
+            <br>
+           <button type="button" 
+           class="edit-btn-1" 
+           data-player ="1">Edit</button>
+        </div>
+        <div class="player-config" id="p-2">
+            <h3>Player 2</h3>
+            <h2>Player Name</h2>
+            <span>O</span>
+            <br>
+            <button type="button" 
+            class="edit-btn-2" 
+            data-player ="2">Edit</button>
+         </div>
+     </section>
+
+     <section class="short-form">
+        <ol>
+
+            <li class="v1">Player Name
+            </li>
+            <li class="v11">
+            </li>
+            <li class="vs">Vs</li>
+
+            <li class="v2">Player Name
+            </li>
+            <li class="v22">
+            </li>
+        </ol>
+     </section>
+     
+     <section class="backdrop-overlay">  
+     </section>
+
+    <section class="backdrop-section">
+        <form>
+            <h2 class="player-choice">Choose Player Name</h2>
+        <div class="input-form">
+            <label for="player-name">Player name</label>
+            <input type="text" id="player-name" name="playerName" required>
+        </div>
+        <p class="input-error"></p>
+        <div class="buttons">
+            <button type="reset" class="cancel">Cancel</button>
+            <button type="submit" class="confirm">Confirm</button>
+        </div>
+    </form>
+    </section>
+
+
+    <section class="start-game">
+        <button class="start-btn">
+                Start New Game
+        </button>
+    </section>
+
+    <section class="winning-section">
+        <h2>Winner is 
+            <span class="winner-name">Player Name</span>
+        </h2>
+        <p>Press the above 
+            <span>Start New Game</span>
+             key to restart new game.</p>
+    </section>
+    <section class="game-section">
+        <section class="turn">
+           <p>
+            It's your turn <span id="player-turn">Player Name</span>
+        </p> 
+            
+        </section>
+        <ol>
+            <li data-row="1" data-col="1" class="items"></li>
+            <li data-row="1" data-col="2" class="items"></li>
+            <li data-row="1" data-col="3"></li>
+
+            <li data-row="2" data-col="1" class="items"></li>
+            <li data-row="2" data-col="2" class="items"></li>
+            <li data-row="2" data-col="3" class="items"></li>
+
+            <li data-row="3" data-col="1" class="items"></li>
+            <li data-row="3" data-col="2" class="items"></li>
+            <li data-row="3" data-col="3" class="items"></li>
+        </ol>
+    </section>
+    
+</body>
+</html>
